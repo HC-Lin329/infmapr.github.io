@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keep this open if you want</title>
+   
+  </head>
+  <body>
+	  <header>
+    <nav>
+            <div class="container">
+                <ul class="menu">
+                    <li><a href="./">Home</a></li>
+                </ul>
+            </div>
+        </nav>
+	  </header>
+    </div>
+  <center>
+	  <div>
+		  <a href="">
+    <img src="transparent.png" width= 50px length= 20px alt="Logo" />
+  </a>
+	  </div>	  
+<div>
+	
+         <a href="">
+    <img src="Infmapr website.gif" alt="Logo" style="width: 550px; height: 160px;" />
+ </a>
+        </div>
+
+	  <div>
+  
+<div class="custom-theme" style="font-size: 45px;" > Big fat theme update coming up </div>
+	
+</div>
+	
+    </center>
+    <center>
+	    <div>
+    <a href="">
+    <img src="transparent.png" width= 40px length= 5px alt="Logo" />
+  </a>
+	    </div>
+      <div class="custom-theme" style="font-size: 25px;"> Check out art class for GBA emultor and custom apps</div>
+	     <div>
+    <a href="">
+    <img src="transparent.png" width= 30px length= 5px alt="Logo" />
+  </a>
+	    </div>
+   <div>
+       <button id="myButtonx">Play Now!! (New Massive Update) </button>
+       </div>
+      <div>
+         <a href="">
+    <img src="transparent.png" alt="Logo" style="width: 40px; height: 7px;" />
+ </a>
+        </div>
+      
+      
+    
+  
+  
+     <div class="custom-theme" style="font-size: 30px;"> "infmapr.netlify.app" or "infmapr.github.io" </div>
+      <style>
+	        #myButtonx {
+    background-color: transparent;
+    color: #f0f0f5;
+    border: 4px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  #myButtonx::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color:  #f0f0f5;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+    opacity: 0.5;
+  }
+  
+  #myButtonx:hover::before {
+    width: 200%;
+    height: 200%;
+  }
+	       .suggestbutton {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  background-color: #007bff;
+  padding: 12px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.suggestbutton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.suggestbutton:hover {
+  background-color: #0056b3;
+}
+
+.suggestbutton:hover::before {
+  left: 0;
+}
+
+	      .custom-theme {
+    color: white;
+	      }
+	      
+	body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: rgba(0, 0, 0, 0.5) url("40692.jpg") no-repeat;
+    background-size: cover;
+}
+		 header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: #fff;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .menu {
+            list-style: none;
+            display: flex;
+        }
+
+        .menu li {
+            margin-left: 20px;
+        }
+
+        .menu li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 8px 12px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        .menu li a:hover {
+            background-color: #555;
+        }
+           
+
+        #myButtonxx {
+    background-color: transparent;
+    color: #0000FF;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-size: 20px;
+  }
+  
+  #myButtonxx::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color:  	#90EE90;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s ease-out, height 0.3s ease-out;
+    opacity: 0.5;
+  }
+  
+  #myButtonxx:hover::before {
+    width: 200%;
+    height: 200%;
+  }
+        
+       
+</style>
+
+<script>
+const button = document.querySelector('#myButtonx');
+  button.addEventListener('click', () => {
+    const newWindow = window.open('about:blank', '_blank');
+    const iframe = document.createElement('iframe');
+    iframe.src = 'file:///C:/Users/Aryan%20Malik/Downloads/Infmapr%20Projects%20update/Github%20desktop/Theme%20work/infmapr.github.io/selection.html';
+    iframe.style.width = '100%';
+    iframe.style.height = '100%';
+    iframe.style.position = 'absolute';
+    iframe.style.top = '0';
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
+    iframe.style.right = '0';
+    newWindow.document.body.appendChild(iframe);
+  });
+
+
+  
+
+</script>
+
+    </center>
+
+    
+    <div id="my-keen-slider" class="keen-slider"></div>
+
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="./assets/keen-slider.min.js"></script>
+   
+    <script src="./js/index.js"></script>
+    <script src="./js/home.js"></script>
+  </body>
+</html>

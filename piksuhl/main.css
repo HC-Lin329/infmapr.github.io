@@ -1,0 +1,113 @@
+
+/* BASIC STUFF */
+
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+::-webkit-scrollbar { width: 0.25rem; }
+::-webkit-scrollbar-track { border-radius: 10rem; }
+::-webkit-scrollbar-thumb { border-radius: 10rem; background-color: #fff; }
+*{ padding: 0; margin: 0; }
+body{ animation: fadeIn 5s; background-color: #4c4c4c; letter-spacing: 1px; font-family: 'Titan One'; overflow-x: hidden; }
+@keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
+
+/* TITLE AREA */
+
+.bar{ 
+    background-size: cover; 
+    padding-bottom: 5rem; 
+    display: flex; 
+    padding-top: 5rem; 
+    background-color: #5c5c5c;
+    margin-bottom: 5rem;
+    box-shadow: 3px 3px 10px black;
+}
+.bar .title{ width: 100%; text-align: center; }
+.bar h1{
+    text-align: center;
+    font-family: 'Titan One', cursive;
+    font-size: 6em;
+    color: #fff;
+    padding-bottom: 2.5rem;
+}
+.bar a{
+    line-height: 2rem;
+    background-color: #848484;
+    color: #fff;
+    padding: 1rem;
+    font-size: 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    margin-left: 5px;
+    transition: 0.75s;
+}
+.bar a:hover{ background-color: rgb(168, 168, 168); transition: 0.75s; }
+
+/* GAME STUFF */
+
+.gamescotain{
+    display: grid;
+    width: 100%;
+    grid-template-columns: .49fr .49fr;
+    justify-content: center;
+    gap: 1rem;
+    height: fit-content;
+    padding-bottom: 5rem;
+}
+.class{
+    font-family: 'Rubik';
+    border-radius: 25px;
+    display: flex;
+    padding: 3rem;
+    background-color: #2f2f2f;
+    min-height: 12vh;
+    color: #fff;
+}
+.class .image{
+    border-radius: 1vw;
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+}
+.class .image img{ width: 120px; height: 120px; border-radius: 1.5rem; transition: 0.75s; }
+.class .image img:hover{ transition: 0.75s; transform: scale(1.15); }
+.class .context{ margin-left: 15px; text-align: center; }
+.class .context a{
+    background-color: #848484;
+    color: #fff;
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.75s;
+}
+.class .context a:hover{ background-color: rgb(168, 168, 168); transition: 0.75s; }
+.class .context h1{ margin-bottom: 0.5rem; font-size: 1.5vw; }
+.class .context p{ margin-bottom: 0.5rem; font-size: .8vw; }
+
+/* FRAME STUFF */
+
+.frame-bar { position: absolute; padding: 1em; text-align: center; }
+.frame-bar i { color: #fff; font-size: 50px; transition: 0.75s; text-shadow: 3px 3px 10px black; }
+.frame-bar i:hover { color: #b1b1b1; transition: 0.75s; }
+iframe { border: 0; width: 100%; height: 100%; overflow: hidden; }
+.frame-main {
+    display: block;
+    z-index: 5;
+    position: absolute;
+    width: 100%;
+    height: 99.724vh;
+    background: #666;
+}
+
+
+
+
+
+/* KEEP AT BOTTOM ALWAYS */
+.hidden { display: none; }
+/* KEEP AT BOTTOM ALWAYS */

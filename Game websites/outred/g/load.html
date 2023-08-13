@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="shortcut icon" href="img/logo.html" type="image/x-icon">
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="/js/gsap/gsap.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+    <title>OutRed | Play your favorite games anytime, anywhere.</title>
+    <style>
+        iframe {
+            height: 45vw;
+            width: 75vw;
+            border: 4px solid black;
+            border-radius: 6px;
+            background: #191919;
+            background-image: url("https://raw.githubusercontent.com/ccsgames/outred-static/main/img/loading-spinner.gif");   
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            left: 0;
+            position: relative;
+        }
+
+        .content {
+            width: 1060px;
+        }
+
+        ul {
+  list-style-type: none;
+  margin: 1%;
+  padding: 5px;
+}
+
+li {
+  display: inline;
+  margin: 5px;
+}
+
+li:active {
+  text-decoration: underline;
+}
+    </style>
+  </head>
+  <body>
+    <script>
+        console.log('Whoah, you found an easter egg. Claim your special "Easter Egg Finder" role in the Discord server! Discord: https://dsc.gg/outred');
+    </script>
+    <div class="nav">
+        <a href="/index.html"><img class="logo" src="https://raw.githubusercontent.com/OutRed/outred.github.io/main/img/standard%20(3).gif"></a>
+        <a href="/index.html">Home</a>
+        <a class="active" href="/g/index.html">Games</a>
+        <a href="/main/apps.html">Apps</a>
+        <a class="alert" onclick="alert('Hello there!\n\ \n\The proxies are now located under the apps page.');">Proxies</a>
+        <a href="/main/settings.html">Settings</a>
+    </div><br><br><br>
+    <div class="content">
+    <div class="game-frame-div" style="margin: 0 auto;">
+      <iframe id="game-frame" scrolling="yes" frameborder="0" cellspacing="0" src="#"></iframe>
+      <h1 style="font-weight: normal; text-align: left;" id="g-name">Cannot fetch current game name</h1>
+      <p style="font-weight: normal; text-align: left;" id="g-description">Cannot fetch current game description</p>
+      </div>
+    </div>
+      <div class="line"></div>
+      <h1 style="font-weight: normal;">You'll also like</h1><br>
+      <div id="recommended-g">Error fetching recommended games</div>
+      <br>
+    </div>
+    </div>
+    <div class="line"></div>
+    <center><footer><ul>
+        <li><a href="https://discord.gg/PBmrGy8EPh" target="_blank">Discord</a></li>
+        <li><a href="#">&copy; OutRed 2023</a></li>
+        <li><a href="https://github.com/ccsgames/outred-static" target="_blank">GitHub</a></li>
+      </ul></footer></center>
+    <script>
+      if (!localStorage.getItem('currentgame')) location.pathname = '/g';
+      document.getElementById('game-frame').src = localStorage.getItem("currentgame");
+      document.getElementById('g-name').textContent = localStorage.getItem("currenttitle");
+      document.getElementById('g-description').textContent = localStorage.getItem("currentdescription");
+    </script>
+    <script src="/g/recommended-g.js"></script>
+  </body>
+  </html>

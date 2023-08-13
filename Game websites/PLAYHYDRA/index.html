@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Unblocked games for the students of MMS"
+    />
+    <meta
+      name="keywords"
+      content="playhydra, unblocked games, unblocked, unblocked playhydra"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME | PLAYHYDRA</title>
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <p
+      style="
+        padding: 20px;
+        background-color: #b03232;
+        width: auto;
+        text-align: center;
+      "
+    >
+      <a href="/posts/2022/ukraine.html" style="color: #161515;"
+        >An Important PSA</a
+      >
+    </p>
+    <div class="nav-container">
+      <a href="index.html"
+        ><img
+          src="assets/images/playhydra.png"
+          alt="PLAYHYDRA LOGO"
+          title="PLAYHYDRA"
+          class="logo"
+      /></a>
+
+      <nav>
+        <a href="index.html" class="nav-item">HOME</a>
+        <a href="about.html" class="nav-item">ABOUT</a>
+        <a href="/location.html" class="nav-item">LOCATION</a>
+      </nav>
+    </div>
+    <input
+      type="text"
+      id="searchbar"
+      onkeyup="search()"
+      placeholder="Search..."
+      title="Search for games"
+    />
+    <div id="search-items">
+      <div class="search-item">
+        <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpreview.redd.it%2Fflappy-plane-v0-gy1n3cbxwux91.jpg%3Fwidth%3D640%26crop%3Dsmart%26auto%3Dwebp%26s%3D0af9fda8e2f7dddd878acd8c381f120dbcf7c9cc&f=1&nofb=1&ipt=6ce33c9142ded7658a76cb1ca12b467bf7e296023a5c8a04a6d0190e8f021d9f&ipo=images" alt="Slope" class="search-img" />
+        <a href="games/flappyplane/index.html">Flappy Plane</a>
+      </div>
+      </div>
+
+      <!-- hehe -->
+      <div id="taco">
+        <a
+          href="/game.html?title=find the taco&width=400&height=500&url=https://njfsmu.csb.app"
+          >find the taco</a
+        >
+      </div>
+    </div>
+    <!-- hey there, code digger -->
+    <!-- https://lps7x.csb.app/assets/css/thing.txt -->
+    <sub><em>BROUGHT TO YOU BY THE STUDENTS OF MMS</em></sub>
+    <script>
+      function search() {
+        let input = document.getElementById("searchbar");
+        let filter = input.value.toLowerCase();
+        let container = document.getElementById("search-items");
+        let items = container.getElementsByClassName("search-item");
+
+        for (var i = 0; i < items.length; i++) {
+          let div = items[i];
+          let element = div.getElementsByTagName("a")[0];
+          if (!element.innerHTML.toLowerCase().includes(filter)) {
+            items[i].style.display = "none";
+          } else {
+            items[i].style.display = "";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

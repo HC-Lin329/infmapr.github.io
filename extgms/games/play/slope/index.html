@@ -1,0 +1,15 @@
+
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Slope</title>
+    <link rel="stylesheet" href="./Slope_files/style.css">
+    <script src="./Slope_files/autologin"></script><script src="./Slope_files/UnityProgress.js.download"></script>
+    <script src="./Slope_files/unityloader41.js.download"></script>
+    <script>
+        var gameInstance = UnityLoader.instantiate("gameContainer", "Build/slope.json", { onProgress: UnityProgress, Module: { onRuntimeInitialized: function() { UnityProgress(gameInstance, "complete") } } });
+    </script>
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <div class="webgl-content">
+        <div id="gameContainer" style="width: 100%; height: 100%; margin: 0px; padding: 0px; border: 0px; position: relative; background: rgb(35, 31, 32);"><canvas id="#canvas" width="2560" height="1289" style="cursor: default;"></canvas><div class="logo Dark" style="display: none;"></div><div class="progress Dark" style="display: none;"><div class="empty" style="width: 0%;"></div><div class="full" style="width: 100%;"></div></div></div>
+    </div>
+<script src="blob:https://mathadventure1.github.io/8b37b5df-9ab2-46ad-aaa8-7718cf19eaa6"></script></body></html>
