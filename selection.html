@@ -17,7 +17,18 @@
         </nav>
 	  </header>
     
-
+    <div class="taskbar">
+      <a href="#">
+          <img src="image1.jpg" alt="Button 1">
+      </a>
+      <a href="#">
+          <img src="image2.jpg" alt="Button 2">
+      </a>
+      <a href="#">
+          <img src="image3.jpg" alt="Button 3">
+      </a>
+      <!-- Add more image buttons here -->
+  </div>
 
 <center>
 <h1 class="logo">infmapr selection</h1>
@@ -534,7 +545,33 @@ justify-content: center;
   border: 3px solid #000; /* Change the color and size as desired */
 }
 
+.taskbar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.taskbar a {
+    margin: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.taskbar img {
+    width: 40px; /* Adjust the width and height as needed */
+    height: 40px;
+    opacity: 0.7; /* Optional: Add a bit of transparency to the images */
+    transition: opacity 0.3s;
+}
+
+.taskbar img:hover {
+    opacity: 1;
+}
 
 
 header {
