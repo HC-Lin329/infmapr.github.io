@@ -1,16 +1,4 @@
 [
-  {
-    "name": "1",
-    "root": "1",
-    "file": "index.html",
-    "img": "meta/apple-touch-icon.png"
-  },
-  {
-    "name": "Now gg",
-    "root": "now gg",
-    "file": "nowgg.html",
-    "img": "https://raw.githubusercontent.com/infmapi/infmapr.github.io/main/nowgg.jpeg"
-  },
     {
     "name": "mcje (IE ONLY!)",
     "root": "mcje",
