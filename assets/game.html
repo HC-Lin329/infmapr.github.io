@@ -58,7 +58,7 @@
         z-index: 99999999999;
         top: 0;
         left: 0;
-        background: var(--background);
+        background: #ffffff;
       }
 
       .game_img {
@@ -190,7 +190,7 @@
         const theme = localStorage.getItem("theme_color");
 
         document.body.setAttribute("theme", "custom");
-        document.body.style = `--theme: ${theme}; --background: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; --text-secondary: ${getColorHex(theme)};`;
+        document.body.style = `--theme: ${theme}; #ffffff: ${getContrastHex(theme)}; --text: ${getColorHex(theme)}; #000000: ${getColorHex(theme)};`;
 
         if (location.pathname.includes("/settings")) {
           document.querySelector("#theme_color").value = theme;
